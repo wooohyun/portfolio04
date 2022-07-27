@@ -1,7 +1,7 @@
 $(function () {
   $("#main_title_video").YTPlayer({
     videoURL: "https://youtu.be/_bgN7BTrnLU",
-    containment: ".main_title_video",
+    containment: ".main_title_video .container",
     autoPlay: true,
     ratio: 'auto',
     abundance: 0.15,
