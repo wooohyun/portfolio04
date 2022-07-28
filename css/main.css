@@ -44,6 +44,10 @@ header nav>ul.right {
     justify-content: flex-end;
 }
 
+header .mbtn {
+    visibility: hidden;
+}
+
 .main_visual {
     position: relative;
     height: 100vh;
@@ -403,17 +407,83 @@ header nav>ul.right {
     }
 
     header .container {
-        width: 1200px;
+        width: auto;
         margin: 0 auto;
         text-align: center;
         line-height: 100px;
     }
+
+    /* 추가시작---------------------------------------------------*/
+
+    header h1 {
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    header .left {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background: #fff;
+        border-right: 1px solid #ddd;
+        width: calc(100% - 90px);
+        height: 100vh;
+        padding: 100px 15px 0 15px;
+        z-index: 999;
+    }
+
+    header .left.on {
+        left: 0;
+    }
+
+    header .right {
+        position: fixed;
+        top: 320px;
+        left: -100%;
+        background: #fff;
+        border-right: 1px solid #ddd;
+        width: calc(100% - 90px);
+        height: 200px;
+        padding: 0px 15px 0 15px;
+        z-index: 999;
+    }
+
+    header .right.on {
+        left: 0;
+    }
+
+    /* 추가끝---------------------------------------------------------- */
 
     header nav {
         display: flex;
         justify-content: space-between;
     }
 
+    /* 추가 시작-------------------------------------------------------------*/
+    header nav>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        line-height: 35px;
+    }
+
+    header .mbtn {
+        position: fixed;
+        visibility: visible;
+        top: 30px;
+        right: 30px;
+        display: block;
+        padding: 5px;
+        background: #f1f1f1;
+        border-radius: 5px;
+        font-size: 23px;
+        line-height: 1;
+        z-index: 1000;
+        color: #333;
+    }
+
+    /* 추가 끝 ---------------------------------------------------------*/
     header nav>* {
         flex: 1;
     }
@@ -430,43 +500,45 @@ header nav>ul.right {
         justify-content: flex-end;
     }
 
+    /* 수정시작----------------------------- */
     .main_visual {
         position: relative;
         height: 100vh;
-        margin: 0px 0 0 -500px;
+        margin: 0 auto;
         background: url(../img/main_visual01.jpg) no-repeat center center/cover;
     }
 
     .main_visual .slogan {
         position: absolute;
-        width: 1200px;
+        width: auto;
         top: 50%;
-        left: 60%;
+        left: 40%;
         transform: translate(-50%, -50%);
     }
 
     .main_visual h2 {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 500;
         color: #734D50;
         line-height: 1.8em;
     }
 
     .main_visual p {
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 300;
         color: #734D50;
         line-height: 1.3em;
     }
 
     .main_title {
-        padding: 150px 0;
+        padding: 150px 40px;
         text-align: center;
         font-size: 21px;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 30px;
     }
 
+    /* 수정완료--------------------------- */
     .main_title_video {
         margin-bottom: 300px;
     }
@@ -480,10 +552,9 @@ header nav>ul.right {
     } */
 
     .main_title_video .container {
-        padding: 350px 0;
+        width: 95%;
         margin: 0 auto;
-        border-top: solid 2px rgb(144, 96, 100);
-        border-bottom: solid 2px rgb(144, 96, 100);
+        border: solid 2px rgb(144, 96, 100);
         text-align: center;
         color: #fff
     }
@@ -510,9 +581,11 @@ header nav>ul.right {
 
     .main_idea_sketch {
         padding: 300px 0;
-        width: 1200px;
+        width: 95%;
         margin: 0 auto;
         border-top: solid 2px rgb(144, 96, 100);
+        border-left: solid 2px rgb(144, 96, 100);
+        border-right: solid 2px rgb(144, 96, 100);
         border-bottom: solid 2px rgb(144, 96, 100);
         text-align: center;
         color: #fff
@@ -535,15 +608,15 @@ header nav>ul.right {
     .main_product_line::before {
         content: "";
         display: block;
-        width: 1200px;
+        width: auto;
         border: 1px solid #ddd;
-        margin: 100px 0 100px 0;
+        margin: 100px 0;
     }
 
     .main_product_line::after {
         content: "";
         display: block;
-        width: 1200px;
+        width: auto;
         border: 1px solid #ddd;
         margin: 100px 0 0 0;
     }
@@ -551,11 +624,12 @@ header nav>ul.right {
     .main_product_line {
         padding: 100px 0;
         text-align: center;
-        width: 1200px;
+        width: auto;
         margin: 0 auto;
     }
 
     .main_product_line h2 {
+        padding: 0 10%;
         font-size: 21px;
         font-weight: 500;
         line-height: 1.3em;
@@ -566,6 +640,8 @@ header nav>ul.right {
         display: flex;
         gap: 40px;
         margin-bottom: 70px;
+        flex-direction: column;
+        padding: 10%;
     }
 
     .main_product_line .container .product {
@@ -601,7 +677,7 @@ header nav>ul.right {
 
     .main_product_lineup {
         padding: 0 0 100px 0;
-        width: 1200px;
+        width: auto;
         margin: 0 auto;
         text-align: center;
     }
@@ -609,7 +685,7 @@ header nav>ul.right {
     .main_product_lineup::after {
         content: "";
         display: block;
-        width: 1200px;
+        width: auto;
         border: 1px solid #ddd;
         margin: 100px 0 0 0;
     }
@@ -618,15 +694,17 @@ header nav>ul.right {
         font-size: 27px;
         font-weight: 500;
         line-height: 1.5em;
-        padding: 0 0 50px 0;
+        padding: 0 0 20% 0;
     }
 
     .main_product_lineup .container {
         text-align: center;
+        padding: 10%;
     }
 
     .main_product_lineup .container .slide {
         display: flex;
+        flex-direction: column;
         border: 1px solid #ddd;
     }
 
@@ -637,9 +715,7 @@ header nav>ul.right {
 
     .main_product_lineup .container .text {
         flex-grow: 1;
-        padding-top: 220px;
-
-
+        padding: 30px;
     }
 
     .main_product_lineup .container h3 {
@@ -657,16 +733,14 @@ header nav>ul.right {
 
     .main_product_lineup .slick-arrow {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         z-index: 999;
-
         font-size: 0;
         border: none;
         background: transparent;
-
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         border-top: 2px solid rgb(144, 96, 100);
         border-left: 2px solid rgb(144, 96, 100);
         opacity: 0.3;
@@ -679,25 +753,26 @@ header nav>ul.right {
     }
 
     .main_product_lineup .slick-prev {
-        margin: 0 0 0 -700px;
+        margin: 0 0 0 -43%;
         transform: translate(-50%, -50%) rotate(-45deg);
     }
 
     .main_product_lineup .slick-next {
-        margin: 0 0 0 700px;
+        margin: 0 0 0 43%;
         transform: translate(-50%, -50%) rotate(135deg);
     }
 
     .main_bottom_banner {
-        padding: 0 0 100px 0;
+        padding: 0 10% 100px 10%;
         text-align: center;
 
     }
 
     .main_bottom_banner .container {
         display: flex;
+        flex-direction: column;
         margin: 0 auto;
-        width: 1200px;
+        width: auto;
         gap: 40px;
     }
 

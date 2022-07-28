@@ -11,6 +11,7 @@ $(function () {
     showControls: false,
     playOnlyIfVisible: true,
     loop: true,
+    optimizeDisplay :true,
     // 화질설정
     quality: 'hd1080'
   });
@@ -39,6 +40,12 @@ $(function () {
     cssEase: 'linear',
   })
 
-
+ // .mbtn을 클릭했을때 .gnb의에 .on클래스를 토글로작동하게 .on을 뗐다가 붙였다가 
+ $('.mbtn').on('click', function () {
+  $('.left').toggleClass('on')
+})
+ $('.mbtn').on('click', function () {
+  $('.right').toggleClass('on')
+})
 
 })
