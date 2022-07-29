@@ -533,7 +533,7 @@ header .mbtn {
     .main_title {
         padding: 150px 40px;
         text-align: center;
-        font-size: 21px;
+        font-size: 17px;
         font-weight: 400;
         line-height: 30px;
     }
@@ -592,14 +592,14 @@ header .mbtn {
     }
 
     .main_idea_sketch h2 {
-        font-size: 25px;
+        font-size: 21px;
         font-weight: 500;
         top: -370px;
         color: #333;
     }
 
     .main_idea_sketch p {
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 300;
         top: 420px;
         color: #333;
@@ -630,13 +630,21 @@ header .mbtn {
 
     .main_product_line h2 {
         padding: 0 10%;
-        font-size: 21px;
+        font-size: 17px;
         font-weight: 500;
         line-height: 1.3em;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
     }
 
-    .main_product_line .container {
+    .main_product_line .top {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 0px;
+        flex-direction: column;
+        padding: 0 10% 0 10%;
+    }
+
+    .main_product_line .bottom {
         display: flex;
         gap: 40px;
         margin-bottom: 70px;
@@ -691,10 +699,10 @@ header .mbtn {
     }
 
     .main_product_lineup h2 {
-        font-size: 27px;
+        font-size: 21px;
         font-weight: 500;
         line-height: 1.5em;
-        padding: 0 0 20% 0;
+        padding: 0 10% 0 10%;
     }
 
     .main_product_lineup .container {
@@ -720,14 +728,14 @@ header .mbtn {
 
     .main_product_lineup .container h3 {
         font-size: 21px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.5em;
         margin-bottom: 20px;
     }
 
     .main_product_lineup .container p {
         font-size: 15px;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.3em;
     }
 
@@ -819,7 +827,7 @@ header .mbtn {
 
     .footer .container ul li {
         display: inline-block;
-        padding: 0 20px;
+        padding: 0 5%;
         margin: 0 0 50px 0;
         font-size: 17px;
         font-weight: 500;
