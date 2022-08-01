@@ -544,7 +544,7 @@ header .mbtn {
         position: absolute;
         width: auto;
         top: 50%;
-        left: 35%;
+        left: 30%;
         transform: translate(-50%, -50%);
     }
 
@@ -562,8 +562,8 @@ header .mbtn {
         line-height: 1.3em;
     }
 
-    .main_visual .wheel{
-        left:50%
+    .main_visual .wheel {
+        left: 50%
     }
 
 
