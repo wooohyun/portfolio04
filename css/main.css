@@ -385,20 +385,20 @@ header .mbtn {
 }
 
 
-.footer {
+footer {
     background: #f5f5f5;
     padding: 100px 0;
 }
 
-.footer .container {
+footer .container {
     text-align: center;
 }
 
-.footer .container .logo {
+footer .container .logo {
     margin: 0 0 30px 0;
 }
 
-.footer .container ul li {
+footer .container ul li {
     display: inline-block;
     padding: 0 20px;
     margin: 0 0 50px 0;
@@ -406,16 +406,16 @@ header .mbtn {
     font-weight: 500;
 }
 
-.footer .container .sns {
+footer .container .sns {
     margin: 0 0 30px 0;
 }
 
-.footer .container i {
+footer .container i {
     font-size: 30px;
     padding: 0 10px;
 }
 
-.footer .container .copyright {
+footer .container .copyright {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.3;
@@ -849,20 +849,20 @@ header .mbtn {
     }
 
 
-    .footer {
+    footer {
         background: #f5f5f5;
         padding: 100px 0;
     }
 
-    .footer .container {
+    footer .container {
         text-align: center;
     }
 
-    .footer .container .logo {
+    footer .container .logo {
         margin: 0 0 30px 0;
     }
 
-    .footer .container ul li {
+    footer .container ul li {
         display: inline-block;
         padding: 0 5%;
         margin: 0 0 50px 0;
@@ -870,16 +870,16 @@ header .mbtn {
         font-weight: 500;
     }
 
-    .footer .container .sns {
+    footer .container .sns {
         margin: 0 0 30px 0;
     }
 
-    .footer .container i {
+    footer .container i {
         font-size: 30px;
         padding: 0 10px;
     }
 
-    .footer .container .copyright {
+    footer .container .copyright {
         font-size: 15px;
         font-weight: 300;
         line-height: 1.3;
