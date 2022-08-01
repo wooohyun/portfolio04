@@ -544,7 +544,7 @@ header .mbtn {
         position: absolute;
         width: auto;
         top: 50%;
-        left: 40%;
+        left: 35%;
         transform: translate(-50%, -50%);
     }
 
@@ -561,6 +561,11 @@ header .mbtn {
         color: #734D50;
         line-height: 1.3em;
     }
+
+    .main_visual .wheel{
+        left:50%
+    }
+
 
     .main_title {
         padding: 150px 40px;
