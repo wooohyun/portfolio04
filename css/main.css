@@ -77,6 +77,38 @@ header .mbtn {
     line-height: 1.3em;
 }
 
+.main_visual .wheel {
+    position: absolute;
+    bottom: 40px;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 55px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    font-size: 0;
+}
+
+.main_visual .wheel span {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 10px;
+    background: #fff;
+    border-radius: 1px;
+    animation: wheel 0.9s infinite;
+}
+
+@keyframes wheel {
+    to {
+        top: 13px;
+    }
+}
+
+
+
 .main_title {
     padding: 150px 0;
     text-align: center;
